@@ -15,7 +15,7 @@
 	"require": {
 		"php": ">=5.4.0",
 		"laravel/framework": ">=5.0",
-        "jms/serializer": "dev-master",
+        "jms/serializer": "1.x",
 		"symfony/yaml": "2.8.x-dev",
 		"symfony/expression-language": "2.8.x-dev",
 		"symfony/config": "2.8.x-dev"
