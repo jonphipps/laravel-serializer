@@ -18,12 +18,11 @@ class SerializerServiceProvider extends Base
      */
     public function boot()
     {
-        include_once '';
         $this->publishes([
-            __DIR__ . '/../config/config.php' => config_path('serializer.php')
+            __DIR__ . '/config/config.php' => config_path('serializer.php')
         ]);
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/config.php', 'serializer'
+            __DIR__ . '/config/config.php', 'serializer'
         );
     }
 
@@ -37,7 +36,7 @@ class SerializerServiceProvider extends Base
 
         $this->app->singleton('JMS\Serializer\Builder\DriverFactoryInterface', function (Application $app) {
             return new CallbackDriverFactory(
-            // Note: Because we're using mappings from the L4 configuration system, there's no
+            // Note: Because we're using mappings from the L5 configuration system, there's no
             // real use for $metadataDirs and $reader.
                 function (array $metadataDirs, Reader $reader) use ($app) {
                     return $app->make('Atrauzzi\LaravelSerializer\MetadataDriver');
