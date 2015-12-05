@@ -14,12 +14,15 @@
 	],
 	"require": {
 		"php": ">=5.4.0",
-		"laravel/framework": ">=4.0",
-        "jms/serializer": "dev-master"
+		"laravel/framework": ">=5.0",
+        "jms/serializer": "dev-master",
+		"symfony/yaml": "2.8.x-dev",
+		"symfony/expression-language": "2.8.x-dev",
+		"symfony/config": "2.8.x-dev"
 	},
 	"autoload": {
 		"psr-4": {
-			"Atrauzzi\\LaravelSerializer\\": "src/Atrauzzi/LaravelSerializer"
+			"Atrauzzi\\LaravelSerializer\\": "Atrauzzi/LaravelSerializer/src"
 		}
 	}
 }
