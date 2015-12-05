@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Atrauzzi\LaravelSerializer;
 
 use Illuminate\Support\ServiceProvider as Base;
 //
