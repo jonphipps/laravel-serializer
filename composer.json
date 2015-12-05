@@ -15,10 +15,10 @@
 	"require": {
 		"php": ">=5.4.0",
 		"laravel/framework": ">=5.0",
-        "jms/serializer": "1.x",
-		"symfony/yaml": "2.8.x-dev",
-		"symfony/expression-language": "2.8.x-dev",
-		"symfony/config": "2.8.x-dev"
+        "jms/serializer": ">=1.0",
+		"symfony/yaml": "2.x",
+		"symfony/expression-language": "2.x",
+		"symfony/config": "2.x"
 	},
 	"autoload": {
 		"psr-4": {
